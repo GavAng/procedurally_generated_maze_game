@@ -8,5 +8,5 @@ This was created for my Advanced Higher Computing Science project, a subject whi
 ## Setup instructions:
 
 1. Ensure you have a Python environment with the Flask module installed
-2. Run mazeServer.py and enter the given localhost port into your browser
+2. Run mazeServer.py and enter localhost port 8080 into your browser
 3. Scroll down to play the game and view the leaderboard
