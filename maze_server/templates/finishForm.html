@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+	
+    <link rel="stylesheet" href="../static/mazecss.css">
+    <script src="../static/mazejs.js"></script>
+
+    <title>Finish Form</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div id="takenUsernames">{{ takenUsernames }}</div>
+    </header>
+
+
+    <div id="stalactites"></div>
+	
+
+    <form id="finishForm" action="/home" method="POST">
+        <div>
+            <p id="congratulations">Congratulations!</p>
+            <p id="gameResults">You completed the maze with a total time of {{ finalTime }} seconds and a total move count of {{ finalMoves }} moves.</p>
+        </div>
+        
+
+        <div id="finishFormInputs">
+            <p>Would you like to save your results to the leaderboard?</p>
+			
+            <input id="yesInput" type="radio" name="saveResults" value="yes" onchange="updateFinishForm()">
+			<label for="yesInput">Yes</label>
+			
+            <input id="noInput" type="radio" name="saveResults" value="no" checked onchange="updateFinishForm()">
+			<label for="noInput">No</label>
+			
+			<div id="usernameInput">
+				<p>Enter the username you would like to save your results with:</p>
+				<input id="username" type="text" name="username" maxlength="25">
+                <p id="warning"></p>
+			</div>
+        </div>
+		
+        <input type="hidden" name="finalTime" value="{{ finalTime }}">
+		<input type="hidden" name="finalMoves" value="{{ finalMoves }}">
+
+		<button type="button" onclick="finishFormSubmit()">
+			Home
+		</button>
+	</form>
+
+
+    <div id="stalagmites">
+        <p>Gavin Angus</p>
+    </div>
+
+</body>
+
+
+</html>
