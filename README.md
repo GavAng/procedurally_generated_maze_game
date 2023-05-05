@@ -21,7 +21,7 @@ You start in the top left corner of a darkened maze, and your goal is to reach a
 maze corners. As you move, the lighting in the maze will change arround you.
 
 
-## Reflections and Improvments
+## Reflections and Improvements
 
 This project was made over a year and a half ago, and looking back there is a lot I would like to improve:
 
