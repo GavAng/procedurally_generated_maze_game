@@ -5,6 +5,8 @@ your name and time in a leaderboard.
 
 This was created for my Advanced Higher Computing Science project, a subject which I ended up getting first prize in.
 
+Looking back I find this code very poor in terms of readability and design, some improvments are listed below.
+
 
 ## Setup Instructions
 
@@ -23,7 +25,7 @@ maze corners. As you move the lighting in the maze will change arround you.
 
 ## Reflections and Improvements
 
-This project was made over a year and a half ago, and looking back there is a lot I would like to improve:
+This project was made over a year and a half ago, here are some things I would like to improve:
 
 - Add test coverage
 - Use NumPy as the program deals with a lot of lists
