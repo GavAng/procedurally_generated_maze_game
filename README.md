@@ -5,7 +5,7 @@ your name and time in a leaderboard.
 
 This was created for my Advanced Higher Computing Science project, a subject which I ended up getting first prize in.
 
-Looking back I find this code very poor in terms of readability and design, some improvments are listed below.
+Looking back I find this code very poor in terms of readability and efficiency; some improvments are listed below. Despite this, the fact that I have produced an algorithm that will generate a maze with every room enterable is awesome.
 
 
 ## Setup Instructions
