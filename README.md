@@ -6,7 +6,7 @@ your name and time in a leaderboard.
 This was created for my Advanced Higher Computing Science project, a subject which I ended up getting first prize in.
 
 
-## Setup Instructions:
+## Setup Instructions
 
 1. Run the following installation command:
 > pip install Flask
@@ -15,7 +15,7 @@ This was created for my Advanced Higher Computing Science project, a subject whi
 3. Scroll down to play the game and view the leaderboard
 
 
-## Game Instructions:
+## Game Instructions
 
 You start in the top left corner of a darkened maze, and your goal is to reach a red exit point that will be situated at one of the other
 maze corners. As you move, the lighting in the maze will change arround you.
