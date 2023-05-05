@@ -30,4 +30,4 @@ This project was made over a year and a half ago, and looking back there is a lo
 - Improve the wall generating part of the algorithm
 - Improve code readability and comments
 
-An improved version of the maze generating script, but not the game, is present in my *procedurally_generated_game* repo.
+An improved version of the maze generating script, but not the game, is present in my *procedurally_generated_maze* repo.
