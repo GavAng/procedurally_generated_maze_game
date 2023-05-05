@@ -18,7 +18,7 @@ This was created for my Advanced Higher Computing Science project, a subject whi
 ## Game Instructions
 
 You start in the top left corner of a darkened maze, and your goal is to reach a red exit point that will be situated at one of the other
-maze corners. As you move, the lighting in the maze will change arround you.
+maze corners. As you move the lighting in the maze will change arround you.
 
 
 ## Reflections and Improvements
