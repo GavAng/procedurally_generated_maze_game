@@ -11,7 +11,7 @@ This was created for my Advanced Higher Computing Science project, a subject whi
 1. Run the following installation command:
 > pip install Flask
 
-2. Run mazeServer.py and enter localhost port 8080 into your browser
+2. Run *mazeServer.py* and enter localhost port 8080 into your browser
 3. Scroll down to play the game and view the leaderboard
 
 
@@ -30,4 +30,4 @@ This project was made over a year and a half ago, and looking back there is a lo
 - Improve the wall generating part of the algorithm
 - Improve code readability and comments
 
-An improved version of the maze generating script, but not the game, is present in my 'procedurally_generated_game' repo.
+An improved version of the maze generating script, but not the game, is present in my *procedurally_generated_game* repo.
