@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+	
+    <link rel="stylesheet" href="../static/mazecss.css">
+    <script src="../static/mazejs.js"></script>
+
+    <title>Cave Crawler Level {{ levelNumber }}</title>
+</head>
+
+
+<body onload="updateGame('start')"> <!-- Initialises Maze -->
+
+    <header>
+        <div id="position">1</div>
+        <div id="torchPosition">0</div>
+        <div id="finishPosition">{{ finishPosition }}</div>
+        <div id="movementCount">0</div>
+        <div id="stopGame">0</div>
+        <div id="totalMoves">{{ totalMoves }}</div> 
+    </header>
+
+    <main>
+	<div id="mainMazeDisplay">
+
+		<div id="mazeGrid">
+			
+			{%for index in range(directions|length)%}
+			<div class="room">
+				<directions>
+					<north>{{ directions[index][0] }}</north>
+					<east>{{ directions[index][1] }}</east>
+					<south>{{ directions[index][2] }}</south>
+					<west>{{ directions[index][3] }}</west>
+				</directions>
+			</div>
+			{%endfor%}
+
+		</div>
+
+		<div>
+
+			<div> <!-- H.U.D. -->
+
+				<div class="gameStat">
+					<p class="statHeading">Game Log:</p>
+					<div class="statBody">
+						<p id="movementLog">Waiting for input.</p>
+					</div>
+				</div>
+
+				<div id="time-movement">
+					<div class="gameStat">
+						<p class="statHeading">Time Taken:</p>
+						<div class="statBody">
+							<p id="timer">00 . 0</p>
+						</div>
+					</div>
+
+					<div class="gameStat">
+						<p class="statHeading">Movement Count:</p>
+						<div class="statBody">
+							<p id="movementCountDisplay">0</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+			<div id="controls"> <!-- Controls Display -->
+
+				<div class="controls">
+					<img src="../static/media/upArrow.png">
+					<p>Up</p>
+				</div>
+				<div class="controls">
+					<img src="../static/media/downArrow.png">
+					<p>Down</p>
+				</div>
+				<div class="controls">
+					<img src="../static/media/rightArrow.png">
+					<p>Right</p>
+				</div>
+				<div class="controls">
+					<img src="../static/media/leftArrow.png">
+					<p>Left</p>
+				</div>
+				<div id="spacebar" class="controls">
+					<img src="../static/media/spacebar.png">
+					<p>Place Torch</p>
+				</div>
+
+			</div>
+
+			<form id="gameForm" action="/game" method="POST">
+
+				<input id="formTime" type="hidden" name="time">
+				<input id="formMovementCount" type="hidden" name="movementCount">
+				<input type="hidden" name="totalTime" value="{{ totalTime }}">
+				<input type="hidden" name="levelNumber" value="{{ levelNumber }}">
+
+				<div id="gameFormSubmit">
+					<input type="submit" value="Next Game">
+				</div>
+
+			</form>
+
+		</div>
+		
+	</div>
+    </main>
+
+</body>
+
+
+</html>
