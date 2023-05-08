@@ -11,7 +11,7 @@ Looking back I find this code very poor in terms of readability and efficiency; 
 ## Setup Instructions
 
 1. Run the following installation command:
-> pip install Flask
+> python -m pip install Flask
 
 2. Run *mazeServer.py* and enter localhost port 8080 into your browser
 3. Scroll down to play the game and view the leaderboard
